@@ -218,20 +218,20 @@ Trading Blocs Identified: 15
 
 📝Limitations
 
-Limitation	Explanation	Mitigation
-MOU vs. binding contracts	Many agreements are non-binding	Recommend tracking FIDs separately
-Data collection bias	European agreements overrepresented	Cross-validate with Asian/African sources
-No investment amounts	Economic importance not captured	Future work: add financial data
-Static analysis	Network structure changes over time	Future work: dynamic network analysis
+## Limitation	                  Explanation	                            Mitigation
+MOU vs. binding contracts	  Many agreements are non-binding	          Recommend tracking FIDs separately
+Data collection bias	      European agreements overrepresented	      cross-validate with Asian/African sources
+No investment amounts	      Economic importance not captured	          Future work: add financial data
+Static analysis	              Network structure changes over time	      Future work: dynamic network analysis
 
 🔮 Future Work
 
-Direction	Method	Expected Insight
-Add investment amounts as weights	Weighted centrality	Reveal economic importance, not just diplomatic
-Dynamic network analysis	Year-by-year evolution	Identify critical junctures and structural shifts
-Link prediction	Machine learning	Predict which country pairs will form agreements
-Resilience analysis	Shock simulation	Identify critical nodes whose removal fragments the network
-NLP on agreement scope	Topic modeling	Distinguish production vs. transport vs. technology agreements
+## Direction	                            Method	                                  Expected Insight
+Add investment amounts as weights	    Weighted centrality	                 Reveal economic importance, not just diplomatic
+Dynamic network analysis	            Year-by-year evolution	             Identify critical junctures and structural shifts
+Link prediction	                        Machine learning	                 Predict which country pairs will form agreements
+Resilience analysis	                    Shock simulation	                 Identify critical nodes whose removal fragments the network
+NLP on agreement scope	                Topic modeling	                     Distinguish production vs. transport vs. technology agreements
 
 📚 Data Sources
 
