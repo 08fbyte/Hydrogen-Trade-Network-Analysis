@@ -155,15 +155,16 @@ Germany's betweenness centrality (0.304) is nearly **3x higher** than Japan (0.1
 
 
 ## How to Reproduce This Analysis
-
+```bash
 pip install pandas networkx matplotlib jupyter
 Steps
 Clone the repository
-
+bash
 git clone https://github.com/08fbyte/hydrogen-trade-network-analysis.git
 cd hydrogen-trade-network-analysis
 Launch Jupyter Notebook
 
+bash
 jupyter notebook
 Open and run code/hydrogen_network_analysis.ipynb
 
