@@ -71,7 +71,6 @@ The hydrogen economy is projected to be a **$1.4 trillion market by 2050**. Unde
 
 *European Core (19 countries), Asia-Pacific Hub (14 countries), MENA Connector (9 countries) dominate.*
 
----
 
 ## 🔍 Key Findings in Detail
 
@@ -88,17 +87,18 @@ The hydrogen economy is projected to be a **$1.4 trillion market by 2050**. Unde
 ### Finding 2: Three Major Trading Blocs Emerged
 
 | Bloc | Countries | Internal Agreements | Primary Role |
-|:---|:---|:---|:---|
+
 | **European Core** | 19 | 30 | Demand hub (importers) |
 | **Asia-Pacific Hub** | 14 | 25 | Mixed (importers + exporters) |
 | **MENA Connector** | 9 | 8 | Supply hub (exporters) |
 
-**Why this matters:** The hydrogen economy is not globalizing uniformly. Regional blocs are forming, each with distinct characteristics.
+**Why this matters:** 
+The hydrogen economy is not globalizing uniformly. Regional blocs are forming, each with distinct characteristics.
 
 ### Finding 3: 2023 Was the Peak Agreement Year
 
 | Year | Agreements | Key Driver |
-|:---|:---|:---|
+
 | 2021 | 3 | Early exploration |
 | 2022 | 29 | Post-invasion energy crisis |
 | **2023** | **55** | **REPowerEU + IRA incentives** |
@@ -106,7 +106,8 @@ The hydrogen economy is projected to be a **$1.4 trillion market by 2050**. Unde
 | 2025 | 9 | Consolidation |
 | 2026 | 12 | New project announcements |
 
-**Why this matters:** The 2022 energy crisis dramatically accelerated hydrogen diplomacy. Most agreements are exploratory MOUs; the next phase will be converting them to binding contracts.
+**Why this matters:** 
+The 2022 energy crisis dramatically accelerated hydrogen diplomacy. Most agreements are exploratory MOUs; the next phase will be converting them to binding contracts.
 
 ### Finding 4: Germany Connects Europe to the World
 
@@ -122,7 +123,7 @@ Germany's betweenness centrality (0.304) is nearly **3x higher** than Japan (0.1
 ### Data Collection
 
 | Source | Count | Time Period |
-|:---|:---|:---|
+
 | Government hydrogen MOUs | 45 | 2021-2026 |
 | Corporate joint ventures | 30 | 2021-2026 |
 | Investment/funding agreements | 25 | 2021-2026 |
@@ -132,7 +133,7 @@ Germany's betweenness centrality (0.304) is nearly **3x higher** than Japan (0.1
 ### Network Construction
 
 | Element | Description |
-|:---|:---|
+
 | **Nodes** | 72 countries with at least one hydrogen agreement |
 | **Edges** | 113 unique bilateral relationships |
 | **Edge Weights** | 1 = MOU (exploratory), 2 = Framework (medium), 3 = Investment/Strategic (binding) |
@@ -140,51 +141,26 @@ Germany's betweenness centrality (0.304) is nearly **3x higher** than Japan (0.1
 ### Analytical Methods
 
 | Method | Purpose | Tool |
-|:---|:---|:---|
-| **Degree Centrality** | Identify most connected countries | NetworkX |
-| **Betweenness Centrality** | Identify bridging nations | NetworkX |
-| **Louvain Community Detection** | Discover trading blocs | NetworkX |
-| **Time Series Analysis** | Track network evolution | Pandas/Matplotlib |
+
+**Degree Centrality** | Identify most connected countries | NetworkX |
+**Betweenness Centrality** | Identify bridging nations | NetworkX |
+**Louvain Community Detection** | Discover trading blocs | NetworkX |
+**Time Series Analysis** | Track network evolution | Pandas/Matplotlib |
 
 ---
 
 ## 💼 Business & Policy Implications
 
 | Stakeholder | Implication | Actionable Recommendation |
-|:---|:---|:---|
-| **Energy Companies** | Germany is the central hub | Prioritize German partnerships for European market access |
-| **Investors** | Asia-Pacific has high internal connectivity | Seek regional rather than global strategies |
-| **Middle East Exporters** | You have bridge positions | Leverage connections to both Europe and Asia |
-| **African Nations** | Currently underrepresented | First-mover advantage available |
-| **Policymakers** | Network is fragile (density: 0.044) | Build redundant pathways for resilience |
 
----
+**Energy Companies** | Germany is the central hub | Prioritize German partnerships for European market access |
+**Investors** | Asia-Pacific has high internal connectivity | Seek regional rather than global strategies |
+**Middle East Exporters** | You have bridge positions | Leverage connections to both Europe and Asia |
+**African Nations** | Currently underrepresented | First-mover advantage available |
+**Policymakers** | Network is fragile (density: 0.044) | Build redundant pathways for resilience |
 
-## 📁 Repository Structure
-hydrogen-trade-network-analysis/
-│
-├── README.md # Project documentation
-│
-├── data/
-│ └── hydrogen_agreements.csv # 115 agreements (2021-2026)
-│
-├── code/
-│ └── hydrogen_network_analysis.ipynb # Complete Jupyter Notebook
-│
-├── images/
-│ ├── hydrogen_network_final.png # Color-coded network map
-│ ├── top_10_hydrogen_powers.png # Degree centrality bar chart
-│ ├── agreements_over_time.png # Temporal trend analysis
-│ └── trading_bloc_distribution.png # Bloc size distribution
-│
-└── outputs/
-└── executive_summary.txt # Key findings summary
 
-text
-
----
-
-## 🚀 How to Reproduce This Analysis
+## How to Reproduce This Analysis
 
 ### Prerequisites
 
@@ -208,23 +184,23 @@ import pandas as pd
 import networkx as nx
 import matplotlib.pyplot as plt
 
-# Load data
-df = pd.read_csv('data/hydrogen_agreements.csv')
+# data loading
+df = pd.read_excel('data/agreements.xlsx')
 
-# Create network
+# network creating
 G = nx.Graph()
 for _, row in df.iterrows():
     G.add_edge(row['Source'], row['Target'], weight=row['Weight'])
 
-# Calculate centrality
+# centrality calculation
 degree_centrality = nx.degree_centrality(G)
 top_countries = sorted(degree_centrality.items(), key=lambda x: x[1], reverse=True)[:10]
 
 print("Top 10 Most Connected Countries:")
 for i, (country, score) in enumerate(top_countries, 1):
     print(f"{i}. {country}: {score*100:.0f}%")
-📊 Results Summary
-text
+
+Results Summary
 Top 10 Most Connected Countries:
 1. Germany: 39%
 2. Netherlands: 27%
@@ -248,12 +224,14 @@ Trading Blocs Identified: 15
 - Largest bloc: 19 countries (European Core)
 - Second largest: 14 countries (Asia-Pacific Hub)
 - Third largest: 9 countries (MENA Connector)
-📝 Limitations
+
+📝Limitations
 Limitation	Explanation	Mitigation
 MOU vs. binding contracts	Many agreements are non-binding	Recommend tracking FIDs separately
 Data collection bias	European agreements overrepresented	Cross-validate with Asian/African sources
 No investment amounts	Economic importance not captured	Future work: add financial data
 Static analysis	Network structure changes over time	Future work: dynamic network analysis
+
 🔮 Future Work
 Direction	Method	Expected Insight
 Add investment amounts as weights	Weighted centrality	Reveal economic importance, not just diplomatic
@@ -261,6 +239,7 @@ Dynamic network analysis	Year-by-year evolution	Identify critical junctures and 
 Link prediction	Machine learning	Predict which country pairs will form agreements
 Resilience analysis	Shock simulation	Identify critical nodes whose removal fragments the network
 NLP on agreement scope	Topic modeling	Distinguish production vs. transport vs. technology agreements
+
 📚 Data Sources
 Source	Data Collected
 European Hydrogen Observatory	Trade dashboard, national strategies
@@ -286,8 +265,6 @@ Domain knowledge (hydrogen economy, energy transition)
 
 Business acumen (extracting actionable insights from data)
 
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 🙏 Acknowledgments
 Data sourced from publicly available government and corporate announcements
