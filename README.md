@@ -53,16 +53,16 @@ The hydrogen economy is projected to be a **$1.4 trillion market by 2050**. Unde
 *15 distinct trading blocs identified. Node size = number of partners. Line thickness = agreement strength.*
 
 ### 2. Top 10 Most Connected Countries
-
+![Top 10 Hydrogen Powers](top_10_hydrogen_powers.png)
 *Germany leads with 39% of all possible partnerships, followed by Netherlands (27%) and Japan (21%).*
 
 ### 3. Agreements Over Time (2021-2026)
-
+![Agreements Over Time](agreements_over_time.png)
 
 *Sharp peak in 2023 (55 agreements) driven by Europe's energy diversification after the 2022 crisis.*
 
 ### 4. Trading Bloc Distribution
-
+![Trading Bloc Distribution](trading_bloc_distribution.png)
 
 *European Core (19 countries), Asia-Pacific Hub (14 countries), MENA Connector (9 countries) dominate.*
 
