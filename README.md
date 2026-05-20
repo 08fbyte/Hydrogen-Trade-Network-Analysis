@@ -217,6 +217,7 @@ Trading Blocs Identified: 15
 - Third largest: 9 countries (MENA Connector)
 
 📝Limitations
+
 Limitation	Explanation	Mitigation
 MOU vs. binding contracts	Many agreements are non-binding	Recommend tracking FIDs separately
 Data collection bias	European agreements overrepresented	Cross-validate with Asian/African sources
@@ -224,6 +225,7 @@ No investment amounts	Economic importance not captured	Future work: add financia
 Static analysis	Network structure changes over time	Future work: dynamic network analysis
 
 🔮 Future Work
+
 Direction	Method	Expected Insight
 Add investment amounts as weights	Weighted centrality	Reveal economic importance, not just diplomatic
 Dynamic network analysis	Year-by-year evolution	Identify critical junctures and structural shifts
@@ -232,6 +234,7 @@ Resilience analysis	Shock simulation	Identify critical nodes whose removal fragm
 NLP on agreement scope	Topic modeling	Distinguish production vs. transport vs. technology agreements
 
 📚 Data Sources
+
 Source	Data Collected
 European Hydrogen Observatory	Trade dashboard, national strategies
 National government announcements	Bilateral MOUs, strategic alliances
@@ -239,6 +242,7 @@ Corporate press releases	Joint ventures, investment agreements
 Hydrogen Insight / Recharge News	Industry partnerships
 
 👤 About the Author
+
 Name: Fanuel Bayeh Tiruneh
 Data Analyst / Aspiring PhD Candidate
 Interests: Energy Modeling, Energy transition, Energy secuirity, Energy economics, network science
