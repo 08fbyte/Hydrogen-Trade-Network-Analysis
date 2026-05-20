@@ -27,7 +27,7 @@ This project answers these questions by building a **network analysis of hydroge
 - Largest Trading Bloc | **European Core** (19 countries, 30 internal agreements) |
 - Peak Agreement Year | **2023** (55 agreements) |
 - Total Countries | 72 |
-- Total Agreements | 115 |
+- Total Agreements | 126 |
 - Trading Blocs Identified | 15 |
 
 ---
