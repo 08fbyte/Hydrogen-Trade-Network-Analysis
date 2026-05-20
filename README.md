@@ -173,15 +173,15 @@ import pandas as pd
 import networkx as nx
 import matplotlib.pyplot as plt
 
-# data loading
+#data loading
 df = pd.read_excel('data/agreements.xlsx')
 
-# network creating
+#network creating
 G = nx.Graph()
 for _, row in df.iterrows():
     G.add_edge(row['Source'], row['Target'], weight=row['Weight'])
 
-# centrality calculation
+#centrality calculation
 degree_centrality = nx.degree_centrality(G)
 top_countries = sorted(degree_centrality.items(), key=lambda x: x[1], reverse=True)[:10]
 
