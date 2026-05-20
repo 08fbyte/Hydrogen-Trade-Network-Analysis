@@ -156,19 +156,14 @@ Germany's betweenness centrality (0.304) is nearly **3x higher** than Japan (0.1
 
 ## How to Reproduce This Analysis
 
-### Prerequisites
-
-```bash
 pip install pandas networkx matplotlib jupyter
 Steps
 Clone the repository
 
-bash
 git clone https://github.com/08fbyte/hydrogen-trade-network-analysis.git
 cd hydrogen-trade-network-analysis
 Launch Jupyter Notebook
 
-bash
 jupyter notebook
 Open and run code/hydrogen_network_analysis.ipynb
 
@@ -196,7 +191,7 @@ for i, (country, score) in enumerate(top_countries, 1):
 
 
 
-### Results Summary
+### Results Summary 
 Top 10 Most Connected Countries:
 1. Germany: 39%
 2. Netherlands: 27%
