@@ -11,7 +11,7 @@ Network analysis of 126 global hydrogen trade agreements (2021-2026). Identifies
 
 The global hydrogen economy is emerging as a cornerstone of the energy transition. But who is leading? Which countries are forming strategic alliances? What trading blocs are emerging?
 
-This project answers these questions by building a **network analysis of hydrogen trade agreements** from 2021 to 2026. Using 115 bilateral agreements across 72 countries, I apply network science methods to identify:
+This project answers these questions by building a **network analysis of hydrogen trade agreements** from 2021 to 2026. Using 126 bilateral agreements across 72 countries, I apply network science methods to identify:
 
 - Hydrogen superpowers** (most connected countries)
 - Bridge nations** (countries that connect different regions)
