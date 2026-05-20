@@ -49,30 +49,24 @@ The hydrogen economy is projected to be a **$1.4 trillion market by 2050**. Unde
 
 ### 1. Hydrogen Trade Network (Color-coded by Trading Bloc)
 
-![Hydrogen Trade Network](https://raw.githubusercontent.com/08fbyte/your-repo-name/main/hydrogen_network_final.png)
-
 *15 distinct trading blocs identified. Node size = number of partners. Line thickness = agreement strength.*
 
 ### 2. Top 10 Most Connected Countries
-
-![Top 10 Hydrogen Powers](images/top_10_hydrogen_powers.png)
 
 *Germany leads with 39% of all possible partnerships, followed by Netherlands (27%) and Japan (21%).*
 
 ### 3. Agreements Over Time (2021-2026)
 
-![Agreements Over Time](images/agreements_over_time.png)
 
 *Sharp peak in 2023 (55 agreements) driven by Europe's energy diversification after the 2022 crisis.*
 
 ### 4. Trading Bloc Distribution
 
-![Trading Bloc Distribution](images/trading_bloc_distribution.png)
 
 *European Core (19 countries), Asia-Pacific Hub (14 countries), MENA Connector (9 countries) dominate.*
 
 
-## 🔍 Key Findings in Detail
+## Key Findings in Detail
 
 ### Finding 1: Germany is the Hydrogen Superpower
 
@@ -200,7 +194,9 @@ print("Top 10 Most Connected Countries:")
 for i, (country, score) in enumerate(top_countries, 1):
     print(f"{i}. {country}: {score*100:.0f}%")
 
-Results Summary
+
+
+### Results Summary
 Top 10 Most Connected Countries:
 1. Germany: 39%
 2. Netherlands: 27%
