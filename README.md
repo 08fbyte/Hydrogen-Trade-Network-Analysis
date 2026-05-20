@@ -13,22 +13,22 @@ The global hydrogen economy is emerging as a cornerstone of the energy transitio
 
 This project answers these questions by building a **network analysis of hydrogen trade agreements** from 2021 to 2026. Using 115 bilateral agreements across 72 countries, I apply network science methods to identify:
 
-- **Hydrogen superpowers** (most connected countries)
-- **Bridge nations** (countries that connect different regions)
-- **Trading blocs** (communities of countries that trade together)
-- **Temporal trends** (how the network evolved after the 2022 energy crisis)
+- Hydrogen superpowers** (most connected countries)
+- Bridge nations** (countries that connect different regions)
+- Trading blocs** (communities of countries that trade together)
+- Temporal trends** (how the network evolved after the 2022 energy crisis)
 
 ### Key Findings at a Glance
 
 | Finding | Result |
-|:---|:---|
-| **Hydrogen Superpower** | 🇩🇪 **Germany** (39% of all possible partnerships) |
-| **Most Important Bridge** | 🇩🇪 **Germany** (betweenness centrality: 0.304) |
-| **Largest Trading Bloc** | **European Core** (19 countries, 30 internal agreements) |
-| **Peak Agreement Year** | **2023** (55 agreements) |
-| **Total Countries** | 72 |
-| **Total Agreements** | 115 |
-| **Trading Blocs Identified** | 15 |
+
+- Hydrogen Superpower | 🇩🇪 **Germany** (39% of all possible partnerships) |
+- Most Important Bridge | 🇩🇪 **Germany** (betweenness centrality: 0.304) |
+- Largest Trading Bloc | **European Core** (19 countries, 30 internal agreements) |
+- Peak Agreement Year | **2023** (55 agreements) |
+- Total Countries | 72 |
+- Total Agreements | 115 |
+- Trading Blocs Identified | 15 |
 
 ---
 
@@ -37,7 +37,7 @@ This project answers these questions by building a **network analysis of hydroge
 The hydrogen economy is projected to be a **$1.4 trillion market by 2050**. Understanding the emerging trade architecture gives:
 
 | Stakeholder | Value |
-|:---|:---|
+
 | **Policymakers** | Identify strategic partners and potential dependencies |
 | **Investors** | Target countries positioned as future hubs |
 | **Energy Companies** | Prioritize partnerships with central network actors |
@@ -45,7 +45,7 @@ The hydrogen economy is projected to be a **$1.4 trillion market by 2050**. Unde
 
 ---
 
-## 📈 Key Visualizations
+## Key Visualizations
 
 ### 1. Hydrogen Trade Network (Color-coded by Trading Bloc)
 
@@ -78,7 +78,7 @@ The hydrogen economy is projected to be a **$1.4 trillion market by 2050**. Unde
 ### Finding 1: Germany is the Hydrogen Superpower
 
 | Metric | Germany's Value | Rank |
-|:---|:---|:---|
+
 | Degree Centrality | 39% of all possible partners | #1 |
 | Betweenness Centrality | 0.304 | #1 |
 | Number of Agreements | 15+ | #1 |
