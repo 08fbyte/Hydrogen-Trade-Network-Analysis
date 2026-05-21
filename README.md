@@ -48,7 +48,7 @@ The hydrogen economy is projected to be a **$1.4 trillion market by 2050**. Unde
 ## Key Visualizations
 
 ### 1. Hydrogen Trade Network (Color-coded by Trading Bloc)
-![Hydrogen Trade Network](hydrogen_network_final.png)
+![Hydrogen Trade Network](hydrogen_network_colored.png)
 
 *15 distinct trading blocs identified. Node size = number of partners. Line thickness = agreement strength.*
 
